@@ -1,0 +1,13 @@
+Volumen de produccion = SUM(manufactura[Units Produced])
+
+Defectos Totales = DEFECTOS TOTALES = SUM(manufactura[Defects])
+
+% Producto no conforme = DIVIDE([DEFECTOS TOTALES],[TOTAL UNID PRODUCIDAS])
+
+Eficacia de mantenimiento = DIVIDE([DEFECTOS TOTALES],[HORAS DE MANTENIMIENTO],0)
+
+HORAS DE MANTENIMIENTO = SUM(manufactura[Maintenance Hours])
+
+HORAS TRABAJADAS = SUM(manufactura[Rework Hours])
+
+PRODUCCION POR HORA = DIVIDE([TOTAL UNID PRODUCIDAS],[HORAS TRABAJADAS])
